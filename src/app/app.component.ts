@@ -11,7 +11,7 @@ import {SplashPage} from "../pages/splash/splash";
   templateUrl: 'app.html'
 })
 export class MyApp {
-  rootPage: any = SplashPage;
+  rootPage: any;
 
   constructor(private platform: Platform, private storage: Storage) {
     platform.ready().then(() => {
@@ -21,11 +21,11 @@ export class MyApp {
       // splashScreen.show();
       // storage.get('firstIn').then((result) => {
       //   if (result) {
-      //     this.rootPage = TabsPage;
+      //     this.rootPage = SplashPage;
       //   }
       //   else {
       //     storage.set('firstIn', true);
-      //     this.rootPage = SplashPage;
+          this.rootPage = TabsPage;
       //   }
       // });
     });

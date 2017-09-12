@@ -1,3 +1,10 @@
 page-home {
-
+  ion-searchbar.searchbar {
+    border: none;
+    background: transparent;
+    .searchbar-input {
+      background: #eee;
+      height: 2.5rem;
+    }
+  }
 }
