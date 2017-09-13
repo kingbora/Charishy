@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import {ModalController, NavController} from 'ionic-angular';
+import {ModalController} from 'ionic-angular';
 import {SearchModal} from "../modal/searchModal/searchModal";
 
 @Component({
@@ -8,11 +8,11 @@ import {SearchModal} from "../modal/searchModal/searchModal";
 })
 export class HomePage {
 
-  constructor(public navCtrl: NavController,public modalCtrl: ModalController) {
+  constructor(public modalCtrl: ModalController) {
 
   }
 
-  onInput(event: Event) {
+  onFocus(event: Event) {
     let modal = this.modalCtrl.create(SearchModal);
     modal.present();
   }

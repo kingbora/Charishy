@@ -11,6 +11,7 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import {SplashPage} from "../pages/splash/splash";
 import {IonicStorageModule} from "@ionic/storage";
+import {ModalModule} from "../pages/modal/modal.module";
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import {IonicStorageModule} from "@ionic/storage";
   imports: [
     BrowserModule,
     IonicModule.forRoot(MyApp),
-    IonicStorageModule.forRoot()
+    IonicStorageModule.forRoot(),
+    ModalModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [
